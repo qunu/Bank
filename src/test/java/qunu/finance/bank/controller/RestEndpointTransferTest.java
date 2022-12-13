@@ -53,8 +53,8 @@ class RestEndpointTransferTest {
                 .andExpect(status().isBadRequest())
                 .andReturn();
 
-        assertEquals("One of the Account ID not found", createResult.getResponse().getContentAsString());
-        verify(accountService, times(2)).findAccount(Mockito.any());
+        assertEquals("Origin Account ID not found : 1", createResult.getResponse().getContentAsString());
+        verify(accountService, times(1)).findAccount(Mockito.any());
         verify(accountService, times(0)).save(Mockito.any());
         verify(transactionService, times(0)).save(Mockito.any(DepositRequest.class), Mockito.anyString());
     }

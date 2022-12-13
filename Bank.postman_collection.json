@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "10be4358-d496-4782-ad44-e06f027b2d12",
+		"name": "Bank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12955258"
+	},
+	"item": [
+		{
+			"name": "transfer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJxdW51LmJhbmsiLCJzdWIiOiIzZXRoYW4iLCJleHAiOjE2NzA5MTkyMTIsImlhdCI6MTY3MDg4MzIxMiwicm9sZXMiOiJSRVBPUlQifQ.CLqwzNN1-x94VmenpZx59TViLAIFP_9ziFcqZO901ABj2mvBM-4fARDPYMfxgLTy2EAg0XMQtDoF9Omny1-Zj26HWfE_bq8pSsDVaA6LAUFaIZlk9FbC33tmIOFr_TPUslXd7W0KPOsLib_H7P2KKm04E4bvA9Z3eQYJQTPvf9R7dhlsgOByRKnfQWXywdjnGWy1kDpesLyKw7PEjeCtRRasDzA9C7EWdQ5hUQacSnChUU5VDqiIE3JbtS_0jDndPNkCYauvaxvj3GHuwWogCTvXVW7KvXQqCQ5Xws_u0FYcRw4LTU3vceGA_Gi43CViJDv8YXbsyDJge9ieiY7iGwru8_hJU813l2nZUJ-hul2OTX34WDTJjJ71LEzwex9RtAsTm2iAlkU9GE_NfOlE0yqlhFRKuvMWXSISyzZ0jphpxqwx2LwxsA-Yh4kEThpsGQLKRD7XPp_tjvLnTZQwEH7gbbRCORw83lsY-36V_5Qh_RO2idSc22aK5Osz0o0awpMwvERHTR8cv3UB-YGeU0qGjhk0DosVDMf8SkfDImvkMWmDj4U89_qDuxJnMLXuMycmfV0A4vX85I4MDc06t41xvJ3VWC7xAAkdSAKJsZzleynwYma-cERHE9dD1fr3UFK3QdLzMm6-qgceg7-C4Nn5AkQUmJDyfUvQq8mbfDM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"originAccountId\" : \"1\",\n    \"destinationAccountId\" : \"2\",\n    \"currency\" : \"ZAR\",\n    \"amount\" : \"5\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/transfer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deposit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJxdW51LmJhbmsiLCJzdiOiIxcnlhbiIsImV4cCI6MTY3MDkyMTAxNCwiaWF0IjoxNjcwODg1MDE0LCJyb2xlcyI6IlJFUE9SVCBERVBPU0lUIFRSQU5TRkVSIn0.AnkPMf-Q5TDbZCRqf5eY9r6uG5L3Lp-orFqjdZqjkIN3KlUh2qXKMcyGdr2OgKCUYsfPI7vDZa6Qh4Ay51rPgTin8j6m6Exh0u7vqHdH4HGWDDQn_vpFRnsxQifzoCw_6H5cWSbDZAQ0SKGy2Ag-OudPJPIlhm2E3i9BfpqH9PBuwGuz7VaF2jOmyceSarMprNBtRVm8p7n0HtE5p5SuC-Lj9QjKrf5THXcYHcAXJJmZ4dwYdtx3TPCCLskFsYV0XROi1p1GUGhjEf8liG0adruCMU-jPWySxZWo-UKId1sqYgNjg56PtRqdKdorcHGScTbRuTJpjdLUt-uRWCh6MTN12YIlYvlTdaYVdUM5Pdif2IWIsCiPyJvp8PjNCCfzO3a10KJJ-CEBf6hjcZ-tZY6cZtW7bGng4l9wa9mkJvb03oZBmEMeuaeZFtIkKbCItoi_UIBs4uuNJE0h4hVduN29pvjx6x1BwT5mXACsZsI1V_bOQYhbKiOtK9fN-38gRHzwJ66PWUJJh2ms1-E9mXboSqpv2PhR4Z1gmxdzujqBCDzplfCGy-_mO_l5i8D-cSMVRqFKpOICJvstHBIjMmv3w89jKQ7l_mmAkCqZ4g97yzyIL8TFwez8jiFsje-8e9kK75HtwCOh2OnganGbEo69EiXiIgxpKQIBqMkZz3E",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"accountId\" : \"1\",\n    \"currency\" : \"ZAR\",\n    \"amount\" : \"10\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/deposit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deposit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "report",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJxdW51LmJhbmsiLCJzdWIiOiIzZXRoYW4iLCJleHAiOjE2NzA5MTkyMTIsImlhdCI6MTY3MDg4MzIxMiwicm9sZXMiOiJSRVBPUlQifQ.CLqwzNN1-x94VmenpZx59TViLAIFP_9ziFcqZO901ABj2mvBM-4fARDPYMfxgLTy2EAg0XMQtDoF9Omny1-Zj26HWfE_bq8pSsDVaA6LAUFaIZlk9FbC33tmIOFr_TPUslXd7W0KPOsLib_H7P2KKm04E4bvA9Z3eQYJQTPvf9R7dhlsgOByRKnfQWXywdjnGWy1kDpesLyKw7PEjeCtRRasDzA9C7EWdQ5hUQacSnChUU5VDqiIE3JbtS_0jDndPNkCYauvaxvj3GHuwWogCTvXVW7KvXQqCQ5Xws_u0FYcRw4LTU3vceGA_Gi43CViJDv8YXbsyDJge9ieiY7iGwru8_hJU813l2nZUJ-hul2OTX34WDTJjJ71LEzwex9RtAsTm2iAlkU9GE_NfOlE0yqlhFRKuvMWXSISyzZ0jphpxqwx2LwxsA-Yh4kEThpsGQLKRD7XPp_tjvLnTZQwEH7gbbRCORw83lsY-36V_5Qh_RO2idSc22aK5Osz0o0awpMwvERHTR8cv3UB-YGeU0qGjhk0DosVDMf8SkfDImvkMWmDj4U89_qDuxJnMLXuMycmfV0A4vX85I4MDc06t41xvJ3VWC7xAAkdSAKJsZzleynwYma-cERHE9dD1fr3UFK3QdLzMm6-qgceg7-C4Nn5AkQUmJDyfUvQq8mbfDM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"accountId\" : \"1\",\n    \"pageNo\" : \"0\",\n    \"pageSize\" : \"2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/report",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth All Roles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"ryan\",\n    \"password\" : \"adminPassword\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth Report Role",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"ethan\",\n    \"password\" : \"adminPassword\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

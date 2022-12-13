@@ -15,6 +15,15 @@ A Banking app using JWT Authorization on its REST Api endpoints.
 /transfer  
 /report  
 
+## Setup Users :
+
+ - ryan
+ - laura
+ - ethan
+ - willow
+
+password for all 'adminPassword'
+
 
 
 

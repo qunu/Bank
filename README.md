@@ -1,5 +1,6 @@
 ## Application Bank
 
+git clone https://github.com/qunu/Bank.git
 
 ## Swagger documentation
 http://localhost:8080/swagger-ui/index.html

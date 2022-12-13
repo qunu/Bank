@@ -17,10 +17,10 @@ A Banking app using JWT Authorization on its REST Api endpoints.
 
 ## Setup Users :
 
- - ryan
- - laura
- - ethan
- - willow
+ - ryan (all roles)
+ - laura (all roles)
+ - ethan (only report role)
+ - willow (only report role)
 
 password for all 'adminPassword'
 

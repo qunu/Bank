@@ -9,10 +9,10 @@ A Banking app using JWT Authorization on its REST Api endpoints.
 
 ## Available Requests :
 
-/login
-/deposit
-/transfer
-/report
+/login  
+/deposit  
+/transfer  
+/report  
 
 
 

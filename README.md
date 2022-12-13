@@ -2,6 +2,10 @@
 
 git clone https://github.com/qunu/Bank.git
 
+## Postman collection
+
+Bank.postman_collection.json
+
 ## Swagger documentation
 http://localhost:8080/swagger-ui/index.html
 http://localhost:8080/rest-api-docs
